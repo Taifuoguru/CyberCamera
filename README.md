@@ -50,3 +50,11 @@ CyberCamera automatically creates its folders on first run.
 sdmc:/3ds/CyberCamera/
 sdmc:/3ds/CyberCamera/captures/
 sdmc:/3ds/CyberCamera/settings.ini
+
+
+
+
+
+
+
+<img width="198" height="196" alt="Ekran görüntüsü 2026-07-03 232644" src="https://github.com/user-attachments/assets/4071294e-e888-4c3a-a3f2-025af5029bad" />
