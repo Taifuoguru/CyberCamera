@@ -5,6 +5,19 @@ CyberCamera is a Nintendo 3DS homebrew camera app with a cyber/Y2K inspired cont
 
 The app focuses on keeping the top screen clean for the live camera preview while placing controls and status information on the bottom screen.
 
+
+
+
+<img width="198" height="196" alt="Ekran görüntüsü 2026-07-03 232644" src="https://github.com/user-attachments/assets/4071294e-e888-4c3a-a3f2-025af5029bad" />
+
+
+
+
+
+
+
+
+
 ## Features
 
 - Live 3DS camera preview
@@ -48,7 +61,6 @@ Gallery controls:
 
 
 
-<img width="198" height="196" alt="Ekran görüntüsü 2026-07-03 232644" src="https://github.com/user-attachments/assets/4071294e-e888-4c3a-a3f2-025af5029bad" />
 
 
 
