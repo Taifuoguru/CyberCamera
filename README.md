@@ -52,11 +52,13 @@ Gallery controls:
 
 
 
-[ANA_20260703_203442.bmp](https://github.com/user-attachments/files/29648139/ANA_20260703_203442.bmp)
+
+
+<img width="800" height="480" alt="ANA_20260703_203341" src="https://github.com/user-attachments/assets/86b5f03a-7eb7-46d0-b407-91fa813bcb12" />
 
 
 
 
+<img width="800" height="480" alt="ANA_20260703_203442" src="https://github.com/user-attachments/assets/88e4a578-9bc8-4be8-a942-6a28ea298241" />
 
-[ANA_20260703_203341.bmp](https://github.com/user-attachments/files/29648137/ANA_20260703_203341.bmp)
 
