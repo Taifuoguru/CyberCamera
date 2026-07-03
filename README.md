@@ -1,3 +1,4 @@
+
 # CyberCamera
 
 CyberCamera is a Nintendo 3DS homebrew camera app with a cyber/Y2K inspired control interface, real-time filters, photo capture, gallery browsing, timer capture, 2x BMP export.
@@ -51,5 +52,11 @@ Gallery controls:
 
 
 
+[ANA_20260703_203442.bmp](https://github.com/user-attachments/files/29648139/ANA_20260703_203442.bmp)
 
+
+
+
+
+[ANA_20260703_203341.bmp](https://github.com/user-attachments/files/29648137/ANA_20260703_203341.bmp)
 
