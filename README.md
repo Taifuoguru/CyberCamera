@@ -54,6 +54,30 @@ Gallery controls:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <img width="800" height="480" alt="ANA_20260703_203341" src="https://github.com/user-attachments/assets/86b5f03a-7eb7-46d0-b407-91fa813bcb12" />
 
 
