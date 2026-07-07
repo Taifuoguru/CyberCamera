@@ -1,0 +1,47 @@
+BasicInfo:
+    Title           : "CyberCamera"
+    CompanyCode     : "00"
+    ProductCode     : "CTR-P-CYBR"
+    ContentType     : Application
+    Logo            : Nintendo
+
+TitleInfo:
+    UniqueId        : 0xFCA77
+    Category        : Application
+
+Option:
+    UseOnSD         : true
+    EnableCompress  : true
+    FreeProductCode : true
+    EnableCrypt     : false
+    MediaFootPadding: false
+
+AccessControlInfo:
+    CoreVersion         : 2
+    DescVersion         : 2
+    ReleaseKernelMajor  : "02"
+    ReleaseKernelMinor  : "33"
+    MemoryType          : Application
+    SystemMode          : 64MB
+    SystemModeExt       : Legacy
+    IdealProcessor      : 0
+    AffinityMask        : 1
+    Priority            : 48
+    MaxCpu              : 0x9E
+    DisableDebug        : false
+    EnableForceDebug    : true
+    CanWriteSharedPage  : true
+    CanUsePrivilegedPriority : false
+    CanUseNonAlphabetAndNumber : true
+    PermitMainFunctionArgument : true
+    CanShareDeviceMemory : true
+    RunnableOnSleep     : false
+    SpecialMemoryArrange : false
+    UseOtherVariationSaveData : false
+    FileSystemAccess:
+      - DirectSdmc
+
+SystemControlInfo:
+    SaveDataSize    : 0KB
+    RemasterVersion : 0000
+    StackSize       : 0x00004000

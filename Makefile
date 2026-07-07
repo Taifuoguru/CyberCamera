@@ -16,10 +16,19 @@ DATA		:=	data
 INCLUDES	:=	include
 GRAPHICS	:=	gfx
 GFXBUILD	:=	$(BUILD)
+ASSETS		:=	assets
 
 APP_TITLE		:=	CyberCamera
 APP_DESCRIPTION	:=	Cyber camera homebrew
 APP_AUTHOR		:=	Codex
+APP_ICON		:=	$(TOPDIR)/$(ASSETS)/icon.png
+APP_BANNER		:=	$(TOPDIR)/$(ASSETS)/banner.png
+APP_AUDIO		:=	$(TOPDIR)/$(ASSETS)/banner.wav
+APP_UNIQUE_ID	:=	0xFCA77
+PRODUCT_CODE	:=	CTR-P-CYBR
+RSF			:=	$(TOPDIR)/CyberCamera.rsf
+BANNERTOOL		?=	$(TOPDIR)/tools/bannertool.exe
+MAKEROM			?=	$(TOPDIR)/tools/makerom.exe
 
 ARCH	:=	-march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 
@@ -88,10 +97,13 @@ ifeq ($(strip $(NO_SMDH)),)
 	export _3DSXFLAGS += --smdh=$(CURDIR)/$(TARGET).smdh
 endif
 
-.PHONY: all clean package
+.PHONY: all clean package cia
 
 all: $(BUILD) $(GFXBUILD) $(DEPSDIR) $(ROMFS_T3XFILES) $(T3XHFILES)
 	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
+
+cia: all
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile cia
 
 $(BUILD):
 	@mkdir -p $@
@@ -119,7 +131,16 @@ package: all
 
 else
 
+all: $(OUTPUT).3dsx
+
+cia: $(OUTPUT).cia
+
 $(OUTPUT).3dsx	:	$(OUTPUT).elf $(_3DSXDEPS)
+$(OUTPUT).cia  :	$(OUTPUT).elf $(RSF) $(APP_ICON) $(APP_BANNER) $(APP_AUDIO)
+	$(SILENTCMD)$(BANNERTOOL) makebanner -i "$(APP_BANNER)" -a "$(APP_AUDIO)" -o banner.bnr
+	$(SILENTCMD)$(BANNERTOOL) makesmdh -s "$(APP_TITLE)" -l "$(APP_DESCRIPTION)" -p "$(APP_AUTHOR)" -i "$(APP_ICON)" -o icon.icn
+	$(SILENTCMD)$(MAKEROM) -f cia -o "$@" -elf "$<" -rsf "$(RSF)" -desc app:2 -banner banner.bnr -icon icon.icn -DAPP_TITLE="$(APP_TITLE)" -DAPP_PRODUCT_CODE="$(PRODUCT_CODE)" -DAPP_UNIQUE_ID="$(APP_UNIQUE_ID)"
+	$(SILENTMSG) built ... $(notdir $@)
 $(OFILES_SOURCES) : $(HFILES)
 $(OUTPUT).elf	:	$(OFILES)
 
