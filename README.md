@@ -92,7 +92,10 @@ Gallery controls:
 
 <img width="800" height="480" alt="ANA_20260703_203341" src="https://github.com/user-attachments/assets/86b5f03a-7eb7-46d0-b407-91fa813bcb12" />
 
+## Support
+If you enjoy this project and want to support my 3DS homebrew work, feel free to buy me a coffee!
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/taifuoguru)
 
 
 <img width="800" height="480" alt="ANA_20260703_203442" src="https://github.com/user-attachments/assets/88e4a578-9bc8-4be8-a942-6a28ea298241" />
